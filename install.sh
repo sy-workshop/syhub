@@ -26,13 +26,15 @@ fi
 
 # Install repo to system
 sudo cp -r ./ "$INSTALL_DIR"
-sudo cp "syhub/syhub.service" "$SYHUB_SERVICE_FILE"
+sudo cp "syhub.service" "$SYHUB_SERVICE_FILE"
 
 # Give all permissions
 sudo chmod a+rwx "$INSTALL_DIR"
 sudo chmod -R 777 "$INSTALL_DIR"
 
 echo "> Installing syhub ... "
+
+cd "$INSTALL_DIR"
 
 cargo build
 
