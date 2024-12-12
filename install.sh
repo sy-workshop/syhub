@@ -48,4 +48,4 @@ sudo systemctl enable syhub
 # Helper restart
 sudo systemctl restart syhub
 
-echo "> INSTALLATION DONE! Thank you."
+echo "> [SYHUB] INSTALLATION DONE! Thank you."
